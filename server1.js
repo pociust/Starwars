@@ -49,7 +49,7 @@ app.post("/api/characters", (req, res) => {
   const newCharacter = req.body;
   console.log(newCharacter);
 
-  newCharacter.routName = newCharacter.name.replace(/\s+/g, "").toLowerCase();
+  newCharacter.routeName = newCharacter.name.replace(/\s+/g, "").toLowerCase();
 
   characters.push(newCharacter);
   res.json(newCharacter);
